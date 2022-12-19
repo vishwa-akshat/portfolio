@@ -1,4 +1,6 @@
 import Navbar from "components/Navbar";
+import About from "components/About";
+
 import "./App.scss";
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
           <div className="line" />
         </div>
       </div>
+      <About />
       <div className="projects-section"></div>
     </div>
   );
