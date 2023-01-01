@@ -1,5 +1,6 @@
 import Navbar from "components/Navbar";
 import About from "components/About";
+import ProjectSection from "components/ProjectSection";
 
 import "./App.scss";
 
@@ -30,7 +31,7 @@ function App() {
         </div>
       </div>
       <About />
-      <div className="projects-section"></div>
+      <ProjectSection />
     </div>
   );
 }

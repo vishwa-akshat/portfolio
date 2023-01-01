@@ -1,0 +1,42 @@
+.projects-section {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(18, 19, 22);
+  padding: 10rem 12rem;
+
+  .heading {
+    font-family: "Montserrat", serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .projects-wrapper {
+    .wrapper {
+      width: 45%;
+      .project-img-wrapper {
+        width: 100%;
+        .project-img {
+          width: 100%;
+        }
+      }
+
+      .name {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      .stack-wrapper {
+        text-transform: uppercase;
+        font-weight: 400;
+
+        .stack {
+          margin: 0 0.5rem;
+        }
+        .stack:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
