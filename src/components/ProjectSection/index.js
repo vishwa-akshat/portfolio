@@ -1,4 +1,5 @@
 import RockPaperAndScissorImg from "images/RockPaperAndScissor.png";
+import PortfolioImg from "images/portfolio.png";
 
 import "./style.scss";
 
@@ -8,6 +9,12 @@ function ProjectSection() {
       id: "01",
       name: "Rock Paper and Scissor",
       img: RockPaperAndScissorImg,
+      stackArr: ["React", "sass"],
+    },
+    {
+      id: "02",
+      name: "Portfolio",
+      img: PortfolioImg,
       stackArr: ["React", "sass"],
     },
   ];

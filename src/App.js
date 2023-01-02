@@ -1,6 +1,7 @@
 import Navbar from "components/Navbar";
 import About from "components/About";
 import ProjectSection from "components/ProjectSection";
+import Footer from "components/Footer";
 
 import "./App.scss";
 
@@ -32,6 +33,7 @@ function App() {
       </div>
       <About />
       <ProjectSection />
+      <Footer />
     </div>
   );
 }

@@ -1,12 +1,17 @@
+import Logo from "components/Logo";
 import "./style.scss";
 
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="logo-wrapper">AV</div>
+      <Logo />
       <div className="cta-wrapper">
-        <span className="link">ABOUT</span>
-        <span className="link">CONTACT</span>
+        <a className="link" href="#about-section">
+          <span>ABOUT</span>
+        </a>
+        <a className="link" href="#contact-section">
+          <span>CONTACT</span>
+        </a>
       </div>
     </div>
   );
