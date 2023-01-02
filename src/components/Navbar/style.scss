@@ -34,3 +34,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .navbar {
+    padding: 2rem 1.2rem;
+
+    .cta-wrapper {
+      .link {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
