@@ -13,10 +13,24 @@
     .link {
       margin: 0 1.5rem;
       font-size: 1.1rem;
-      font-weight: 670;
+      font-weight: 600;
       letter-spacing: 5px;
       text-decoration: none;
       color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 1.5rem 4rem;
+
+    .cta-wrapper {
+      .link {
+        margin: 0 1rem;
+        font-size: 0.8rem;
+        letter-spacing: 4px;
+      }
     }
   }
 }
