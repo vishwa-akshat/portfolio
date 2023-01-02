@@ -9,6 +9,7 @@
     font-size: 3.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 3px;
   }
   .projects-wrapper {
     display: flex;
@@ -48,6 +49,35 @@
         }
         .stack:first-child {
           margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects-section {
+    padding: 5rem 6rem 10rem;
+
+    .heading {
+      font-size: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    .projects-wrapper {
+      .wrapper {
+        width: 42%;
+
+        .project-number {
+          left: -2rem;
+          font-size: 3rem;
+        }
+
+        .name {
+          font-size: 1.3rem;
+        }
+
+        .stack-wrapper {
+          font-size: 0.9rem;
         }
       }
     }
