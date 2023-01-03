@@ -59,8 +59,10 @@ function ProjectSection() {
               </div>
               <h3 className="name">{project.name}</h3>
               <p className="stack-wrapper">
-                {project.stackArr.map((stack) => (
-                  <span className="stack">{stack}</span>
+                {project.stackArr.map((stack, index) => (
+                  <span key={index} className="stack">
+                    {stack}
+                  </span>
                 ))}
               </p>
             </div>

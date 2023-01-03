@@ -1,0 +1,14 @@
+.loading-screen {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(18, 19, 22);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .percentage {
+    font-size: 5rem;
+    transform: rotate(-30deg);
+  }
+}

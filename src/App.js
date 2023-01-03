@@ -1,11 +1,20 @@
+import { useState, useEffect } from "react";
+
 import Navbar from "components/Navbar";
 import About from "components/About";
 import ProjectSection from "components/ProjectSection";
 import Footer from "components/Footer";
+import LoadingScreen from "components/LoadingScreen";
 
 import "./App.scss";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  if (loading) {
+    return <LoadingScreen setLoading={setLoading} />;
+  }
+
   return (
     <div className="container">
       <Navbar />
