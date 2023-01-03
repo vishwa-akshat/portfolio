@@ -29,6 +29,27 @@
       margin-left: 0;
     }
   }
+
+  .resume-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+
+    .img-wrapper {
+      width: 2rem;
+      margin-right: 1rem;
+      .resume-img {
+        width: 100%;
+      }
+    }
+
+    .download {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {

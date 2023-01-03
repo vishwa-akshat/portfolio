@@ -1,3 +1,6 @@
+import ResumeImg from "images/resume.svg";
+import Resume from "file/akshat-resume.pdf";
+
 import "./style.scss";
 
 function About() {
@@ -37,6 +40,14 @@ function About() {
             </p>
           );
         })}
+      </div>
+      <div className="resume-wrapper">
+        <div className="img-wrapper">
+          <img src={ResumeImg} alt="resume" className="resume-img" />
+        </div>
+        <a href={Resume} className="download" target="_blank" rel="noreferrer">
+          Download Resume
+        </a>
       </div>
     </div>
   );
