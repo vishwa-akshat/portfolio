@@ -10,12 +10,17 @@ function ProjectSection() {
       name: "Rock Paper and Scissor",
       img: RockPaperAndScissorImg,
       stackArr: ["React", "sass"],
+      codeUrl: "https://github.com/vishwa-akshat/rock-paper-scissors",
+      projectUrl:
+        "https://rock-paper-scissors-i2z0nwylr-vishwa-akshat.vercel.app/",
     },
     {
       id: "02",
       name: "Portfolio",
       img: PortfolioImg,
       stackArr: ["React", "sass"],
+      codeUrl: "https://github.com/vishwa-akshat/portfolio",
+      projectUrl: "https://akshat-dev.vercel.app/",
     },
   ];
 
@@ -33,6 +38,24 @@ function ProjectSection() {
                   className="project-img"
                   alt={project.name}
                 />
+                <div className="backdrop">
+                  <a
+                    className="links"
+                    href={project.projectUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    className="links"
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Code
+                  </a>
+                </div>
               </div>
               <h3 className="name">{project.name}</h3>
               <p className="stack-wrapper">

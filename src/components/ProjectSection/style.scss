@@ -22,6 +22,7 @@
 
       .project-number {
         position: absolute;
+        z-index: 5;
         top: 0;
         left: -2.5rem;
         font-size: 4rem;
@@ -29,8 +30,43 @@
       }
       .project-img-wrapper {
         width: 100%;
+        position: relative;
+        cursor: pointer;
+
         .project-img {
           width: 100%;
+        }
+
+        .backdrop {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: rgba(255, 255, 255, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          overflow: hidden;
+          height: 0;
+          transition: all 0.3s ease;
+
+          .links {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 2rem;
+            padding: 1rem 2rem;
+            font-weight: 700;
+
+            &:hover {
+              color: rgb(103, 107, 119);
+            }
+          }
+        }
+
+        &:hover .backdrop {
+          height: 100%;
         }
       }
 
