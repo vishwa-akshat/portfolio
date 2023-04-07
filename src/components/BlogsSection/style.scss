@@ -1,0 +1,176 @@
+.blogs-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(18, 19, 22);
+    padding: 2rem 12rem 10rem;
+
+    .heading {
+        font-family: "Montserrat", serif;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .blogs-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        .wrapper {
+            width: 45%;
+            position: relative;
+
+            .blog-number {
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                left: -2.5rem;
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            .blog-img-wrapper {
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+
+                .blog-img {
+                    width: 100%;
+                }
+
+                .backdrop {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(255, 255, 255, 0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    overflow: hidden;
+                    height: 0;
+                    transition: all 0.3s ease;
+
+                    .links {
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                        margin: 0 2rem;
+                        padding: 1rem 2rem;
+                        font-weight: 700;
+
+                        &:hover {
+                            color: rgb(103, 107, 119);
+                        }
+                    }
+                }
+
+                &:hover .backdrop {
+                    height: 100%;
+                }
+            }
+
+            .name {
+                text-transform: uppercase;
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .blogs-section {
+        padding: 5rem 6rem 10rem;
+
+        .heading {
+            font-size: 3rem;
+            margin-bottom: 2.5rem;
+        }
+        .blogs-wrapper {
+            .wrapper {
+                width: 42%;
+
+                .blog-number {
+                    left: -2rem;
+                    font-size: 3rem;
+                }
+
+                .blog-img-wrapper {
+                    .backdrop {
+                        .links {
+                            font-size: 0.8rem;
+                            margin: 0 1.5rem;
+                            padding: 1rem 1.5rem;
+                        }
+                    }
+                }
+
+                .name {
+                    font-size: 1.3rem;
+                }
+
+                .stack-wrapper {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .blogs-section {
+        box-sizing: border-box;
+        padding: 5rem 2rem;
+
+        .heading {
+            font-size: 2rem;
+        }
+
+        .blogs-wrapper {
+            flex-direction: column;
+
+            .wrapper {
+                width: 87%;
+                margin-bottom: 2rem;
+
+                .blog-number {
+                    left: -1.5rem;
+                    font-size: 3rem;
+                }
+
+                .blog-img-wrapper {
+                    width: 100%;
+                    position: relative;
+                    cursor: pointer;
+
+                    .backdrop {
+                        margin-top: 1rem;
+                        width: 100%;
+                        position: relative;
+                        background: transparent;
+                        height: 2rem;
+                        justify-content: space-between;
+
+                        .links {
+                            font-size: 0.8rem;
+                            margin: 0;
+                            padding: 1rem 1.5rem;
+                        }
+                    }
+
+                    &:hover .backdrop {
+                        height: 2rem;
+                    }
+                }
+
+                .name {
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}
