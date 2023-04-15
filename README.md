@@ -19,9 +19,9 @@ This is a personal portfolio project that showcases my skills and projects. The 
 
 The website has a responsive design and is optimized for desktop, tablet and mobile devices. The home page showcases my skills and projects, while the blog page displays my latest blog posts from Hashnode API.
 
-### Screenshot
+### Screenshot/Video
 
-![Desktop View Screenshot](./public/images/screen-capture.webm)
+![Desktop View Video](./src/images/screen-capture.webm)
 
 ### Links
 
