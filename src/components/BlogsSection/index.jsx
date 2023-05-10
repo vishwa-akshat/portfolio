@@ -4,8 +4,9 @@ import "./style.scss";
 
 export default function BlogsSection({ blogPosts }) {
     const blogs = blogPosts.map((blog, index) => {
+        let count = index + 1;
         return {
-            id: index < 10 ? `0${index}` : index,
+            id: count < 10 ? `0${count}` : count,
             name: blog.title,
             img: blog.coverImage,
             blogUrl: `https://akshatv.hashnode.dev/${blog.slug}`,

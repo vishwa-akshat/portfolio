@@ -1,6 +1,7 @@
 import RockPaperAndScissorImg from "images/RockPaperAndScissor.png";
 import PortfolioImg from "images/portfolio.png";
 import WindbnbImg from "images/Windbnb.png";
+import WeatherAppImg from "images/WeatherApp.png";
 
 import "./style.scss";
 
@@ -8,6 +9,14 @@ function ProjectSection() {
     const projects = [
         {
             id: "01",
+            name: "Weather App",
+            img: WeatherAppImg,
+            stackArr: ["Vite", "React", "SASS", "Zustand", "Openweather API"],
+            codeUrl: "https://github.com/vishwa-akshat/weather-app",
+            projectUrl: "https://weather-app-red-one.vercel.app/",
+        },
+        {
+            id: "02",
             name: "Rock Paper and Scissor",
             img: RockPaperAndScissorImg,
             stackArr: ["React", "sass"],
@@ -19,7 +28,7 @@ function ProjectSection() {
             id: "02",
             name: "Portfolio",
             img: PortfolioImg,
-            stackArr: ["React", "SASS"],
+            stackArr: ["React", "SASS", "Hashnode API"],
             codeUrl: "https://github.com/vishwa-akshat/portfolio",
             projectUrl: "https://akshat-dev.vercel.app/",
         },
