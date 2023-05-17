@@ -2,6 +2,7 @@ import RockPaperAndScissorImg from "images/RockPaperAndScissor.png";
 import PortfolioImg from "images/portfolio.png";
 import WindbnbImg from "images/Windbnb.png";
 import WeatherAppImg from "images/WeatherApp.png";
+import ImageUploaderImg from "images/ImageUploader.png";
 
 import "./style.scss";
 
@@ -25,7 +26,22 @@ function ProjectSection() {
                 "https://rock-paper-scissors-i2z0nwylr-vishwa-akshat.vercel.app/",
         },
         {
-            id: "02",
+            id: "03",
+            name: "Image Uploader",
+            img: ImageUploaderImg,
+            stackArr: [
+                "Vite",
+                "React",
+                "Typescript",
+                "SASS",
+                "Zustand",
+                "Firebase",
+            ],
+            codeUrl: "https://github.com/vishwa-akshat/image-uploader",
+            projectUrl: "https://image-uploader-smoky.vercel.app/",
+        },
+        {
+            id: "04",
             name: "Portfolio",
             img: PortfolioImg,
             stackArr: ["React", "SASS", "Hashnode API"],
@@ -33,7 +49,7 @@ function ProjectSection() {
             projectUrl: "https://akshat-dev.vercel.app/",
         },
         {
-            id: "03",
+            id: "05",
             name: "Windbnb",
             img: WindbnbImg,
             stackArr: ["Vite", "React", "SASS", "Zustand"],
@@ -78,9 +94,9 @@ function ProjectSection() {
                             <h3 className="name">{project.name}</h3>
                             <p className="stack-wrapper">
                                 {project.stackArr.map((stack, index) => (
-                                    <span key={index} className="stack">
+                                    <p key={index} className="stack">
                                         {stack}
-                                    </span>
+                                    </p>
                                 ))}
                             </p>
                         </div>

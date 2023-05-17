@@ -68,7 +68,7 @@ function App() {
                 </div>
                 <div className="content-wrapper">
                     <div className="name">Akshat Vishwakarma</div>
-                    <div className="position">Frontend developer</div>
+                    <div className="position">Software developer</div>
                     <div className="portfolio-text">portfolio</div>
                 </div>
                 <div className="scroll-down-wrapper">

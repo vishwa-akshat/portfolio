@@ -13,9 +13,10 @@
     }
     .projects-wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 25px;
 
         .wrapper {
             width: 45%;
@@ -80,13 +81,10 @@
             .stack-wrapper {
                 text-transform: uppercase;
                 font-weight: 400;
-
-                .stack {
-                    margin: 0 0.5rem;
-                }
-                .stack:first-child {
-                    margin-left: 0;
-                }
+                display: flex;
+                flex-wrap: wrap;
+                line-height: 0px;
+                column-gap: 20px;
             }
         }
     }
@@ -142,6 +140,7 @@
 
         .projects-wrapper {
             flex-direction: column;
+            align-items: center;
 
             .wrapper {
                 width: 87%;
@@ -178,11 +177,13 @@
                 }
 
                 .name {
+                    text-align: center;
                     font-size: 1.2rem;
                     margin-bottom: 0.5rem;
                 }
 
                 .stack-wrapper {
+                    justify-content: center;
                     font-size: 0.8rem;
                 }
             }

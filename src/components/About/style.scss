@@ -1,99 +1,100 @@
 .about-section {
-  box-sizing: border-box;
-  padding: 10rem 12rem;
-  background-color: rgb(18, 19, 22);
+    box-sizing: border-box;
+    padding: 10rem;
+    background-color: rgb(18, 19, 22);
 
-  .heading {
-    text-transform: uppercase;
-    font-size: 3.8rem;
-    letter-spacing: 4px;
-  }
-  .info {
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-  }
-  .sub-heading {
-    text-transform: uppercase;
-    font-size: 3rem;
-    letter-spacing: 4px;
-  }
-
-  .skill-wrapper {
-    .skill {
-      margin: 0.5rem 1.5rem 0.5rem 0;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      display: inline-block;
+    .heading {
+        text-transform: uppercase;
+        font-size: 3.8rem;
+        letter-spacing: 4px;
     }
-    .skill:first-child {
-      margin-left: 0;
+    .info {
+        letter-spacing: 1px;
+        font-size: 1.5rem;
     }
-  }
-
-  .resume-wrapper {
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-
-    .img-wrapper {
-      width: 2rem;
-      margin-right: 1rem;
-      .resume-img {
-        width: 100%;
-      }
+    .sub-heading {
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 4px;
     }
 
-    .download {
-      text-decoration: none;
-      color: #fff;
-      font-size: 1.2rem;
-      letter-spacing: 2px;
+    .skill-wrapper {
+        .skill {
+            margin: 0.5rem 1.5rem 0.5rem 0;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        .skill:first-child {
+            margin-left: 0;
+        }
     }
-  }
+
+    .resume-wrapper {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+
+        .img-wrapper {
+            width: 2rem;
+            margin-right: 1rem;
+            .resume-img {
+                width: 100%;
+            }
+        }
+
+        .download {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
-  .about-section {
-    padding: 5rem 6rem;
+    .about-section {
+        padding: 5rem 6rem;
 
-    .heading {
-      font-size: 3rem;
-    }
-    .info {
-      font-size: 1.3rem;
-    }
-    .sub-heading {
-      font-size: 2.8rem;
-    }
+        .heading {
+            font-size: 3rem;
+        }
+        .info {
+            font-size: 1.3rem;
+        }
+        .sub-heading {
+            font-size: 2.8rem;
+        }
 
-    .skill-wrapper {
-      .skill {
-        font-size: 1.2rem;
-      }
+        .skill-wrapper {
+            .skill {
+                font-size: 1.2rem;
+            }
+        }
     }
-  }
 }
 
 @media only screen and (max-width: 425px) {
-  .about-section {
-    padding: 5rem 2rem;
+    .about-section {
+        padding: 5rem 2rem;
 
-    .heading {
-      font-size: 2rem;
-    }
-    .info {
-      letter-spacing: 0;
-      font-size: 1.15rem;
-    }
-    .sub-heading {
-      font-size: 1.8rem;
-    }
+        .heading {
+            font-size: 2rem;
+        }
+        .info {
+            letter-spacing: 0;
+            font-size: 1.15rem;
+        }
+        .sub-heading {
+            font-size: 1.8rem;
+        }
 
-    .skill-wrapper {
-      .skill {
-        margin: 0.3rem 1rem 0.3rem 0;
-        font-size: 1.15rem;
-      }
+        .skill-wrapper {
+            .skill {
+                margin: 0.3rem 1rem 0.3rem 0;
+                font-size: 1.15rem;
+            }
+        }
     }
-  }
 }
