@@ -16,9 +16,8 @@ async function blogsRequest(query) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({ query }),
-        Authorization: "0197f4f9-1b9e-4adb-96fe-3b243d358b90",
+        Authorization: process.env.REACT_APP_API_KEY,
     });
-
     return await response.json();
 }
 
