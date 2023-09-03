@@ -18,6 +18,8 @@ function About() {
         "ant-design",
         "storybook",
         "firebase",
+        "tailwind CSS",
+        "framer motion",
     ];
 
     return (

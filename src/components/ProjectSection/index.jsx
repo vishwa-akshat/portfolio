@@ -3,6 +3,8 @@ import PortfolioImg from "images/portfolio.png";
 import WindbnbImg from "images/Windbnb.png";
 import WeatherAppImg from "images/WeatherApp.png";
 import ImageUploaderImg from "images/ImageUploader.png";
+import MetaversusImg from "images/Metaversus.png";
+import ThulloImg from "images/Thullo.png";
 
 import "./style.scss";
 
@@ -10,6 +12,30 @@ function ProjectSection() {
     const projects = [
         {
             id: "01",
+            name: "Thullo",
+            img: ThulloImg,
+            stackArr: [
+                "Next.js",
+                "React",
+                "SASS",
+                "Zustand",
+                "Unsplash API",
+                "Firebase",
+                "DnD Kit",
+            ],
+            codeUrl: "https://github.com/vishwa-akshat/thullo",
+            projectUrl: "https://thullo-three.vercel.app/",
+        },
+        {
+            id: "02",
+            name: "Metaversus",
+            img: MetaversusImg,
+            stackArr: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+            codeUrl: "https://github.com/vishwa-akshat/metaversus",
+            projectUrl: "https://metaversus-lake.vercel.app/",
+        },
+        {
+            id: "03",
             name: "Weather App",
             img: WeatherAppImg,
             stackArr: ["Vite", "React", "SASS", "Zustand", "Openweather API"],
@@ -17,7 +43,7 @@ function ProjectSection() {
             projectUrl: "https://weather-app-red-one.vercel.app/",
         },
         {
-            id: "02",
+            id: "04",
             name: "Rock Paper and Scissor",
             img: RockPaperAndScissorImg,
             stackArr: ["React", "sass"],
@@ -26,7 +52,7 @@ function ProjectSection() {
                 "https://rock-paper-scissors-i2z0nwylr-vishwa-akshat.vercel.app/",
         },
         {
-            id: "03",
+            id: "05",
             name: "Image Uploader",
             img: ImageUploaderImg,
             stackArr: [
@@ -41,7 +67,7 @@ function ProjectSection() {
             projectUrl: "https://image-uploader-smoky.vercel.app/",
         },
         {
-            id: "04",
+            id: "06",
             name: "Portfolio",
             img: PortfolioImg,
             stackArr: ["React", "SASS", "Hashnode API"],
@@ -49,7 +75,7 @@ function ProjectSection() {
             projectUrl: "https://akshat-dev.vercel.app/",
         },
         {
-            id: "05",
+            id: "07",
             name: "Windbnb",
             img: WindbnbImg,
             stackArr: ["Vite", "React", "SASS", "Zustand"],
