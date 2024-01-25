@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useQuery } from "@apollo/client";
 
 import Navbar from "components/Navbar";
 import About from "components/About";
@@ -6,6 +7,8 @@ import ProjectSection from "components/ProjectSection";
 import Footer from "components/Footer";
 import LoadingScreen from "components/LoadingScreen";
 import BlogsSection from "components/BlogsSection";
+
+import { GET_BLOGS } from "components/utils/queries";
 
 import "./style.scss";
 
@@ -23,29 +26,14 @@ async function blogsRequest(query) {
 
 function App() {
     const [loading, setLoading] = useState(true);
-    const [blogPosts, setBlogPosts] = useState();
 
-    useEffect(() => {
-        if (!blogPosts) {
-            const query = `
-                          {
-                          user(username: "akshatV") {
-                            publication {
-                              posts{
-                                slug
-                                title
-                                brief
-                                coverImage
-                              }
-                            }
-                          }
-                          }
-                          `;
-            blogsRequest(query).then((res) => {
-                setBlogPosts(res.data.user.publication.posts);
-            });
-        }
-    }, []);
+    const {
+        loading: blogLoading,
+        error,
+        data: blogPosts,
+    } = useQuery(GET_BLOGS);
+
+    console.log(error);
 
     if (loading) {
         return <LoadingScreen setLoading={setLoading} />;
@@ -67,7 +55,7 @@ function App() {
                 </div>
                 <div className="content-wrapper">
                     <div className="name">Akshat Vishwakarma</div>
-                    <div className="position">Software developer</div>
+                    <div className="position">FullStack Developer</div>
                     <div className="portfolio-text">portfolio</div>
                 </div>
                 <div className="scroll-down-wrapper">
@@ -78,7 +66,7 @@ function App() {
             </div>
             <About />
             <ProjectSection />
-            <BlogsSection blogPosts={blogPosts} />
+            {/* <BlogsSection blogPosts={blogPosts} /> */}
             <Footer />
         </div>
     );
