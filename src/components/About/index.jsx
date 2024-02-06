@@ -12,6 +12,16 @@ function About() {
         "javascript",
         "typescript",
         "react",
+        "node.js",
+        "express.js",
+        "chakra-ui",
+        "styled-components",
+        "mongodb",
+        "postgres",
+        "grapghql",
+        "grapghql",
+        "pwa",
+        "jest",
         "next.js",
         "redux/redux-saga",
         "material-ui",
@@ -26,27 +36,26 @@ function About() {
         <div id="about-section" className="about-section">
             <h1 className="heading">About</h1>
             <p className="info">
-                I'm Akshat Vishwakarma, a software developer with a focus on
-                Frontend Development. My passion lies in crafting exceptional
-                digital experiences and bringing designs to life. With a keen
-                eye for detail and a deep understanding of these technologies, I
-                strive to create seamless and engaging user interfaces.
-                <br />
-                <br />
-                I thoroughly enjoy the process of making projects, as it allows
-                me to turn ideas into reality. Whether it's developing dynamic
-                e-commerce platforms, designing interactive dashboards, or
-                building responsive mobile applications, I embrace challenges
-                with an open mindset. I'm constantly learning and staying
-                up-to-date with the latest industry trends to ensure I deliver
-                cutting-edge solutions.
-                <br />
-                <br />
-                Collaboration is key, and I'm excited to work with individuals
-                or teams who share a passion for innovation. If you're looking
-                for a dedicated software developer who can create exceptional
-                web experiences, I'm here to bring your ideas to life. Let's
-                connect and embark on an exciting journey together!
+                Hi, I’m Akshat Vishwakarma, a freelance web developer and
+                software engineer based in India. I have over two years of
+                experience in building modern, responsive, and user-friendly web
+                applications using technologies such as Next.js, React.js,
+                Node.js, and more.
+            </p>
+            <p className="info">
+                I have worked with clients from various domains, delivering
+                high-quality solutions that meet their needs and expectations. I
+                am really passionate about web development and technology in
+                general, and I enjoy learning new skills, exploring new
+                challenges, and collaborating with other developers. I have a
+                strong interest in UI/UX design, performance optimization, and
+                web accessibility.
+            </p>
+            <p className="info">
+                I also like to share my knowledge and experience through my
+                Twitter, Linkedin, Portfolio, Github, and blog. You can connect
+                with me on LinkedIn and Twitter. I look forward to hearing from
+                you and working with you on your next project. 😊
             </p>
             <h2 className="sub-heading">Skills</h2>
             <div className="skill-wrapper">

@@ -5,11 +5,20 @@ import WeatherAppImg from "images/WeatherApp.png";
 import ImageUploaderImg from "images/ImageUploader.png";
 import MetaversusImg from "images/Metaversus.png";
 import ThulloImg from "images/Thullo.png";
+import PinnacleImg from "images/pinnacle.png";
 
 import "./style.scss";
 
 function ProjectSection() {
     const projects = [
+        {
+            id: "01",
+            name: "Pinnacle Doodle - (WIP)",
+            img: PinnacleImg,
+            stackArr: ["Vite", "React", "Styled-Component", "Konva.js"],
+            codeUrl: "https://github.com/vishwa-akshat/pinnacle-doodle.git",
+            projectUrl: "https://github.com/vishwa-akshat/pinnacle-doodle.git",
+        },
         {
             id: "01",
             name: "Thullo",
