@@ -19,7 +19,6 @@ function About() {
         "mongodb",
         "postgres",
         "grapghql",
-        "grapghql",
         "pwa",
         "jest",
         "next.js",
