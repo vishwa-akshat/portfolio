@@ -1,4 +1,4 @@
-# personal Portfolio
+# My Personal Portfolio
 
 This is a personal portfolio project that showcases my skills and projects. The website is built using React and styled with Sass. It also features a blog section where I fetch my blog posts from Hashnode API.
 
